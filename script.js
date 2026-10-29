@@ -4,6 +4,23 @@
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var fine = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
+  /* ---- casual-copy deterrent ----
+     Anything a browser can show can still be saved, so this only stops the easy routes.
+     The contact details are marked .selectable and stay copyable. */
+  function inside(node, selector) {
+    var el = node && (node.nodeType === 1 ? node : node.parentElement);
+    return !!(el && el.closest(selector));
+  }
+  document.addEventListener("copy", function (e) {
+    var sel = window.getSelection();
+    if (!inside(sel && sel.anchorNode, ".selectable")) e.preventDefault();
+  });
+  document.addEventListener("cut", function (e) { e.preventDefault(); });
+  document.addEventListener("dragstart", function (e) { e.preventDefault(); });
+  document.addEventListener("contextmenu", function (e) {
+    if (inside(e.target, ".portrait, .about-shot, .gallery")) e.preventDefault();
+  });
+
   /* ---- scroll reveal ---- */
   var risers = [].slice.call(document.querySelectorAll(".rise"));
   function revealAll() {

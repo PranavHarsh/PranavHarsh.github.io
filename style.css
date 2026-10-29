@@ -56,6 +56,12 @@ body::before{
   height:env(safe-area-inset-top,0px);z-index:40;background:var(--surface);
 }
 img{display:block;max-width:100%;height:auto}
+
+/* Casual-copy deterrent. Text and images cannot be selected, dragged or long-press
+   saved. The contact details stay selectable so people can copy the email address. */
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+img{-webkit-user-drag:none;user-drag:none;pointer-events:none}
+.selectable,.selectable *{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
 a{color:var(--signal)}
 
 .wrap{max-width:1080px;margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}

@@ -4,6 +4,10 @@ Personal portfolio site. Static, no build step, no dependencies.
 
 **Live:** https://pranavharsh.github.io/
 
+## Copyright
+
+Copyright (c) 2026 Pranav Harsh. All rights reserved. No licence is granted to copy or reuse the code, design or photographs. See `LICENSE`.
+
 ## Contents
 
 ```
