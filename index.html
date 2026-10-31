@@ -57,14 +57,14 @@
     <p class="plate">Selected work</p>
     <div class="feature-head">
       <h2>ParkEase</h2>
-      <span class="tagline">Smart urban parking · Live on Vercel</span>
+      <span class="tagline">Smart urban parking · Live on Vercel &amp; Render</span>
     </div>
     <div class="feature-body">
       <ul class="bullets">
         <li>Drivers <strong>find, reserve and pay</strong> for parking in real time, with live spot availability, dynamic pricing and QR-based gate access.</li>
         <li>Location-aware search with a <strong>“near me”</strong> mode, an adjustable radius and amenity filters for covered bays, security, EV charging and bike racks.</li>
         <li>Role-based sign-up splits the product in two: <strong>Drivers</strong> book spots, <strong>Operators</strong> manage lots and set their own pricing.</li>
-        <li>Built and deployed solo — React front end, Node.js API, SQL schema, shipped on Vercel.</li>
+        <li>Built and deployed solo — a Next.js front end on Vercel, an Express, Prisma and Socket.io API on Render, and a managed PostgreSQL database on Neon.</li>
       </ul>
       <div class="panel-3d">
         <div class="filters" data-tilt data-tilt-max="7">
@@ -95,12 +95,11 @@
     <div class="projects">
 
       <article class="card" data-tilt data-tilt-max="8">
-        <span class="lang">React · Updated 2026</span>
-        <h3>face-detect-url</h3>
-        <p>A React app with the full authentication loop — sign up, sign in, sign out — wired to a URL-tracking feature that ranks the entries people submit. The repo ships a production build, served straight from its own branch.</p>
+        <span class="lang">React · Node.js · Redis</span>
+        <h3>face-detect-url <span class="leds" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></span></h3>
+        <p>Finds faces in a picture from an image link, a web page address, or a pasted, dropped or uploaded image, with the detection running in the browser. Every link is also rated <strong>Safe, Suspicious or Dangerous</strong> by a checker that combines URL and IP analysis, look-alike detection, DNS, TLS and redirect checks, domain age, and live phishing and malware feeds. Includes sign-in with a persistent session and a per-user entry count.</p>
         <div class="links">
           <a href="https://pranavharsh.github.io/face-detect-url-master/" target="_blank" rel="noopener">Live demo →</a>
-          <a class="ghost" href="https://github.com/PranavHarsh/face-detect-url-master" target="_blank" rel="noopener">Code</a>
         </div>
       </article>
 
@@ -170,15 +169,15 @@
       </div>
       <div>
         <h3>Front end</h3>
-        <div class="chips"><span class="chip">React.js</span><span class="chip">Redux</span><span class="chip">Responsive UI</span><span class="chip">Component design</span></div>
+        <div class="chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">Redux</span><span class="chip">Responsive UI</span><span class="chip">Component design</span></div>
       </div>
       <div>
         <h3>Back end &amp; data</h3>
-        <div class="chips"><span class="chip">Node.js</span><span class="chip">REST APIs</span><span class="chip">Auth flows</span><span class="chip">SQL</span><span class="chip">Schema design</span></div>
+        <div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">REST APIs</span><span class="chip">WebSockets</span><span class="chip">Auth flows</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Schema design</span></div>
       </div>
       <div>
         <h3>Tooling</h3>
-        <div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">NPM</span><span class="chip">VS Code</span><span class="chip">Postman</span><span class="chip">Vercel</span></div>
+        <div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">NPM</span><span class="chip">VS Code</span><span class="chip">Postman</span><span class="chip">Vercel</span><span class="chip">Render</span><span class="chip">GitHub Pages</span></div>
       </div>
       <div>
         <h3>AI</h3>
@@ -186,7 +185,7 @@
       </div>
       <div>
         <h3>Practices</h3>
-        <div class="chips"><span class="chip">Git-based workflows</span><span class="chip">Client-side state</span><span class="chip">End-to-end ownership</span></div>
+        <div class="chips"><span class="chip">Git-based workflows</span><span class="chip">Client-side state</span><span class="chip">Automated testing</span><span class="chip">End-to-end ownership</span></div>
       </div>
     </div>
   </div>

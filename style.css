@@ -259,6 +259,11 @@ nav a:hover,nav a:focus-visible{color:var(--ink);border-bottom-color:var(--marki
 .card:hover h3{transform:translateZ(34px)}
 .card:hover .lang{transform:translateZ(22px)}
 .card:hover .links{transform:translateZ(26px)}
+.leds{display:inline-flex;gap:5px;margin-left:8px;vertical-align:middle}
+.leds i{width:9px;height:9px;border-radius:50%;display:block}
+.leds .r{background:#ff3b3b;box-shadow:0 0 6px 1px rgba(255,59,59,.7)}
+.leds .y{background:#ffd23f;box-shadow:0 0 6px 1px rgba(255,210,63,.7)}
+.leds .g{background:#2ee86f;box-shadow:0 0 6px 1px rgba(46,232,111,.7)}
 .card .lang{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--marking)}
 .card p{font-size:14.5px;color:var(--ink-2);flex:1}
 .links{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
